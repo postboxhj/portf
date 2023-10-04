@@ -67,18 +67,18 @@
 }
 
 /* social media icons styling */
-.social-icons {
-  font-size: 20px;
-  cursor: pointer;
-}
 
 .fa {
   color: black;
+  cursor: pointer;
 }
-
-.fa-x:hover,
+.fa-brands{
+  color: black;
+}
+.fa-x-twitter:hover,
 .fa-linkedin-in:hover,
-.fa-github:hover {
+.fa-github:hover,
+.fa-heart:hover {
   color: red;
 }
 
@@ -86,7 +86,6 @@
 #footer {
   background-color: gainsboro;
   text-align: center;
-  padding: 1px;
 }
 
 /* spacing on all sections */

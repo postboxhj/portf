@@ -61,7 +61,7 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
             <h2 class="hero_title">Hi, it's me Harish</h2>
             <p class="hero_desc">
-              I am a professional freelancer in Hyderabad city.
+              I am a professional front-end Developer in Hyderabad city.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@
             <div class="col-lg-4 mt-4">
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class="fas servicesIcon fa-clock"></i>
+                        <i class="fa-solid fa-code servicesIcon"></i>
                         <h4 class="card-title mt-3">Website Development</h4>
                         <p class="card-text mt-3">I am a passionate front-end developer with a flair for crafting captivating web experiences. Proficient in HTML, CSS, and JavaScript, I specialize in building sleek and responsive user interfaces. Currently honing my skills with the React framework, I bring creativity and functionality together to create seamless and engaging websites.</p>
                     </div>
@@ -123,7 +123,7 @@
             <div class="col-lg-4 mt-4">
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <i class="fa-brands fa-figma servicesIcon"></i>
                         <h4 class="card-title mt-3">Website Design</h4>
                         <p class="card-text mt-3">"In addition to my front-end development expertise, I have a keen eye for web design, ensuring that not only does your website function seamlessly but also looks visually stunning. I embrace the principles of responsive design, creating interfaces that adapt elegantly to various screen sizes"</p>
                     </div>
@@ -133,7 +133,7 @@
             <div class="col-lg-4 mt-4">
                 <div class="card servicesText">
                     <div class="card-body">
-                        <i class='far servicesIcon fa-check-circle'></i>
+                        <i class="fa-solid fa-check servicesIcon"></i>
                         <h4 class="card-title mt-3">Website Deployment</h4>
                         <p class="card-text mt-3">When it comes to deployment, I am well-versed in deploying web applications, ensuring a smooth transition from development to the live environment. Proficient in tools like Git and platforms like Netlify,Vercel. I bring your projects to life with efficiency and precision.</p>
                     </div>
@@ -277,15 +277,18 @@
           <div class="col-lg-6">
               <!-- form fields -->
               
-              <form>
-                  <input type="text" class="form-control form-control-md" placeholder="Name">
-                  <input type="email" class="form-control mt-3" placeholder="Email">
-                  <input type="text" class="form-control mt-3" placeholder="Subject">
-                  <div class="mb-3 mt-3">
-                      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Your thoughts..."></textarea>
-                  </div>
-              </form>
-              <button type="button" class="btn btn-success mt-3">Contact Me</button>
+              <form id="contactForm">
+                <input type="text" class="form-control form-control-md" id="name" placeholder="Name" required>
+                <input type="email" class="form-control mt-3" id="email" placeholder="Email"required>
+                <input type="text" class="form-control mt-3" id="subject" placeholder="Subject"required>
+                <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Your thoughts..."required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success mt-3">Contact Me</button>
+            </form>
+            
+            
+            
               
           </div>
 
@@ -294,14 +297,17 @@
 </section>
 <!-- footer section-->
 <footer id="footer">
-  <div class="container-fluid">
+  <div class="container-fluid text-center p-1">
       <!-- social media icons -->
-      <div class="social-icons mt-4">
+      <div class="social-icons mt-1">
+        
           <!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> -->
           <!-- <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
-          <a href="https://twitter.com/itsharishSarkar" target="_blank"><i class="fa-solid fa-x"></i></a>
+          <a href="https://twitter.com/itsharishSarkar" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="https://www.linkedin.com/in/harish-j1/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="https://github.com/Harish-Sarkar" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <p class="lead">Designed by <i class="fa-solid fa-heart"></i> Harish_Sarkar</p>
+          <!-- <p class="copyright">Copy rights <i class="fa-regular fa-copyright"> 2023</i></p> -->
       </div>
   </div>
 </footer>
