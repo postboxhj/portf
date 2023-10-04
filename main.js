@@ -1,62 +1,12 @@
+// add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
 
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-
-
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right ="0";
-        }
-        function closemenu(){
-            sidemenu.style.right ="-200px";
-        }
-
-    
-
-
-
-    
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwvuEfhwUo9-xk103dQL9GRo-Qz5Gnp22Mo31kgRZ2Xsqnr2mjSaVYoV3EpwZWbJ_pF/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                    
-                }, 5000);
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      
-    
-    
-        let docTitle = document.title;
-        window.addEventListener('blur', () =>{
-            document.title = 'Come Back!';
-        });
-
-        window.addEventListener('focus', () =>{
-            document.title = docTitle;
-        });
-      
+window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
