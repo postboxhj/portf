@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 .hero_title,
-.hero_desc,.navbar-brand {
+.hero_desc,
+.navbar-brand {
   font-family: "Roboto Mono", monospace;
 }
-
+a.nav-link:hover{
+  color: red;
+  font-weight: bold;
+}
 /* hero background image */
 .bgimage {
   height: 100vh;
@@ -48,22 +52,25 @@
   text-align: center;
   width: 100%;
 }
-.card{
+
+.card {
   transition: transform 0.3s ease-in-out;
 }
+
 .card:hover {
   transform: scale(1.1);
 }
+
 .card-title {
   text-align: center;
 }
 
 .card:hover .servicesIcon {
-  color: #00ff37;
+  color: hsl(250, 88%, 48%);
 }
 
 .servicesText:hover {
-  border: 1px solid #00ff37;
+  border: 1px solid hsl(243, 90%, 50%);
 }
 
 /* display background color black on navbar scroll */
@@ -77,9 +84,11 @@
   color: black;
   cursor: pointer;
 }
-.fa-brands{
+
+.fa-brands {
   color: black;
 }
+
 .fa-x-twitter:hover,
 .fa-linkedin-in:hover,
 .fa-github:hover,
@@ -113,4 +122,10 @@
     background-size: cover;
     position: relative;
   }
+}
+
+
+
+body {
+  user-select: none;
 }
